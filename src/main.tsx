@@ -1,7 +1,7 @@
-import { createRoot } from "react-dom/client";
-import App from "./App";
-import "../vendor/fonts/1.0.0/fonts.css";
-import "./styles.css";
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+import App from './App';
+import './styles.css';
 
-const root = document.getElementById("root");
-if (root) createRoot(root).render(<App />);
+const root = createRoot(document.getElementById('root')!);
+root.render(<App />);
